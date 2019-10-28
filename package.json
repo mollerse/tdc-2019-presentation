@@ -1,0 +1,50 @@
+{
+  "name": "tdc-2019-presentation",
+  "version": "1.0.0",
+  "description": "Presentasjon om generativt design på TDC 2019",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo presentation.js -s index.js --live -- -t [ babelify ] -t brfs",
+    "build": "browserify presentation.js -o index.js -t [ babelify ] -t brfs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollerse/tdc-2019-presentation.git"
+  },
+  "keywords": [
+    "presentation"
+  ],
+  "author": "Stian Møllersen <stian.moellersen@gmail.com>",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/mollerse/tdc-2019-presentation/issues"
+  },
+  "homepage": "https://github.com/mollerse/tdc-2019-presentation#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babelify": "^10.0.0",
+    "brfs": "^2.0.1",
+    "browserify": "^16.2.2",
+    "budo": "^11.3.2"
+  },
+  "dependencies": {
+    "alea": "^1.0.0",
+    "dat.gui": "^0.7.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "simplex-noise": "^2.4.0",
+    "spectacle": "^4.2.3",
+    "three-orbit-controls": "^82.1.0",
+    "uuid": "^3.3.3",
+    "web-audio-analyser": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  }
+}
